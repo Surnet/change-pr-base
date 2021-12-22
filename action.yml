@@ -1,0 +1,18 @@
+name: 'Change Pull Request Base'
+description: 'Change the Pull Request Base Branch'
+inputs:
+  repo:
+    description: 'Owner/Repository'
+    required: true
+  pull-number:
+    description: 'Number of the pull request'
+    required: true
+  new-base:
+    description: 'Branch that shall be used as the new branch'
+    required: true
+  token:
+    description: 'GitHub Token'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
