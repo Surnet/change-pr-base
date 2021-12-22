@@ -24,7 +24,7 @@ This action changes the Pull Request's base branch.
 
 ```yaml
 name: Change Base of PR
-uses: ./actions/change-pr-base
+uses: Surnet/change-pr-base@v1.0
 with:
   repo: Owner/Repository
   pull-number: 11
