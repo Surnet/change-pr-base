@@ -1,3 +1,18 @@
+# Deprecated
+
+Please use the GitHub CLI for this use case.
+```yaml
+- name: Change Base of PR
+  run: |
+    gh pr edit $PR_NUMBER --repo $REPO --base $BASE_BRANCH
+  env:
+    REPO: Owner/Repository
+    PR_NUMBER: 11
+    BASE_BRANCH: new-base-branch
+    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+
 # change-pr-base
 
 This action changes the Pull Request's base branch.
